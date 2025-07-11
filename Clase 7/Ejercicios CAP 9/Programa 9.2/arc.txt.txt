@@ -1,0 +1,2 @@
+Hola, este es un texto de prueba.
+El programa deberia leer esto.
