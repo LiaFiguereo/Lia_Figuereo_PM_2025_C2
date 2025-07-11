@@ -10,18 +10,22 @@ SAL y NOM: variables de tipo real. */
 void main (void)
 {
     int I;
-    float SAL, NOM;
+    float SAL, NOM, IMP, TOT;
     NOM = 0;
     for (I = 1; I <= 5; I++)
     {
         printf("\nIngrese el salario del profesor % d:\t",I);
         scanf("%f",&SAL);
         NOM = NOM + SAL;
+        IMP = SAL * 0.80;
+        TOTAL = TOT +(SAL * 0.80)
+
     }
-    //imrpimir el pago de los profesores
+    //imprimir el pago de los profesores
     //por cada uno menos el 20%
     //imprimir el pago de nomina
     //imprimir el total a los profesores sin el impuesto
     //imprimir el total de impuestos
     printf("\nEl total de la nomina es: %.2f",NOM);
+    printf ("\nEl total del sueldo ")
 }

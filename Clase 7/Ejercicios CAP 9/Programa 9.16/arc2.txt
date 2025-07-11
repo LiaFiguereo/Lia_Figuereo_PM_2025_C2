@@ -1,0 +1,6 @@
+123.45
+Esto es una linea de texto.
+67.8
+90.1
+Otra linea de texto
+200.0

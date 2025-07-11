@@ -1,0 +1,5 @@
+Hola, este es un texto de prueba.
+Vivimos en méxico.
+Es un pais muy bonito, méXico.
+Me gusta la comida de méxico.
+Fin del archivo.
