@@ -15,23 +15,23 @@ int esJaqueMate(char tablero[8][8], bool esBlanca);
 bool turnoBlancas = true; //true = turno blancas, false = turno negras
 
 
-// Función para establecer colores de texto y fondo
+// Funcion para establecer colores de texto y fondo
 void setColor(int backgroundColor, int textColor) {
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(hConsole, backgroundColor * 16 + textColor);
 }
 
-// Función para restablecer los colores a los predeterminados
+// Funcion para restablecer los colores a los predeterminados
 void resetColor() {
     setColor(0, 7); // Fondo negro, texto blanco
 }
 
-// Función para limpiar la pantalla
+// Funcion para limpiar la pantalla
 void clearScreen() {
     system("cls"); //Ejecuta el comando "cls" en Windows para limpiar la pantalla
 }
 
-// Función que muestra el tablero con colores alternos para las casillas
+// Funcion que muestra el tablero con colores alternos para las casillas
 void mostrarTablero(char tablero[8][8]) {
     // Colores para las casillas y piezas
     int colorBlanco = 15;  // Blanco brillante para las casillas blancas
@@ -172,8 +172,8 @@ int esJaqueMate(char tablero[8][8], bool esBlanca) {
             if (di == 0 && dj == 0) continue; // Ignora la casilla actual.
             int nueva_fila = fila_rey + di;
             int nueva_col = col_rey + dj;
-            if (esCasillaValida(nueva_fila, nueva_col) && // Casilla válida.
-                (!tablero[nueva_fila][nueva_col] || isupper(tablero[nueva_fila][nueva_col]) != esBlanca)) { // Casilla vacía o con pieza enemiga.
+            if (esCasillaValida(nueva_fila, nueva_col) && // Casilla vå«®ida.
+                (!tablero[nueva_fila][nueva_col] || isupper(tablero[nueva_fila][nueva_col]) != esBlanca)) { // Casilla vacç‡° o con pieza enemiga.
                 char temp = tablero[nueva_fila][nueva_col]; // Guarda la pieza destino.
                 tablero[nueva_fila][nueva_col] = esBlanca ? 'K' : 'k'; // Mueve el rey.
                 tablero[fila_rey][col_rey] = '\0'; // Libera la casilla original.
@@ -191,7 +191,7 @@ int esJaqueMate(char tablero[8][8], bool esBlanca) {
 int main() {
     char tablero[8][8]; //Matriz 8x8 para el tablero
 
-    // Inicializar el tablero (blancas en mayúsculas, negras en minúsculas)
+    // Inicializar el tablero (blancas en mayî€³culas, negras en minî€³culas)
     for(int i = 0; i < 8; i++) {
         for(int j = 0; j < 8; j++) {
             if(i == 6) tablero[i][j] = 'P'; // Peones blancos en fila 2
@@ -217,7 +217,7 @@ int main() {
     }
 
     // Mensaje de bienvenida al juegoo
-    printf("¡Bienvenido al juego de ajedrez!\n");
+    printf("ã€ienvenido al juego de ajedrez!\n");
     printf("Use notacion algebraica (ej. 'e2 e4') para mover piezas.\n");
     printf("Las Blancas (MAYUSCULAS) juegan primero. Escriba 'salir' para terminar.\n");
     system("pause"); //Pausa para que el usuario pueda leer
@@ -237,7 +237,7 @@ int main() {
         entrada[strcspn(entrada, "\n")] = '\0'; //Elimina el salto de linea
 
         if (strlen(entrada) == 0) { //Entrada vacia
-            printf("Entrada vacía. Use 'e2 e4' o 'salir'.\n");
+            printf("Entrada vacç‡°. Use 'e2 e4' o 'salir'.\n");
             system("pause");
             continue;
         }
@@ -321,10 +321,10 @@ int main() {
                 //Verifica si el movimiento causa jaque o jaque mate al enemigo.
                 int dummy_fila, dummy_col;
                 if (esJaqueMate(tablero, !turnoBlancas)) {
-                    printf("¡Jaque mate! %s ganan.\n", turnoBlancas ? "Blancas" : "Negras");
+                    printf("ï¸°aque mate! %s ganan.\n", turnoBlancas ? "Blancas" : "Negras");
                     break;
                 } else if (estaEnJaque(tablero, !turnoBlancas, &dummy_fila, &dummy_col)) {
-                    printf("¡Jaque!\n");
+                    printf("ï¸°aque!\n");
                 }
 
                 printf("Movimiento realizado: %s a %s\n", origen, destino);
