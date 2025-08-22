@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1755807180 source:c:\users\lia figuereo\desktop\programacion para mecas\lia_figuereo_pm_2025_c2\proyecto final\proyecto final\costos.c
+	"costos.h"
+	<stdio.h>
+
+1755804072 source:c:\users\lia figuereo\desktop\programacion para mecas\lia_figuereo_pm_2025_c2\proyecto final\proyecto final\main.c
+	<stdio.h>
+	<stdlib.h>
+	"vehiculo.h"
+	"costos.h"
+
+1755218452 source:c:\users\lia figuereo\desktop\programacion para mecas\lia_figuereo_pm_2025_c2\proyecto final\proyecto final\persistencia.c
+
+1755809054 source:c:\users\lia figuereo\desktop\programacion para mecas\lia_figuereo_pm_2025_c2\proyecto final\proyecto final\vehiculo.c
+	"vehiculo.h"
+	<string.h>
+	<stdlib.h>
+
+1755803121 c:\users\lia figuereo\desktop\programacion para mecas\lia_figuereo_pm_2025_c2\proyecto final\proyecto final\vehiculo.h
+	<stdio.h>
+
+1755804072 c:\users\lia figuereo\desktop\programacion para mecas\lia_figuereo_pm_2025_c2\proyecto final\proyecto final\costos.h
+	"vehiculo.h"
+
